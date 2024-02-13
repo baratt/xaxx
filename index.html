@@ -1,0 +1,367 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>bara tariq profolio</title>
+    <meta name="description" content="bara tariq Developer">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&amp;display=swap" rel="stylesheet">
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const form = document.querySelector('.contact__form');
+    
+        form.addEventListener('submit', function (event) {
+          event.preventDefault(); // Prevent the default form submission
+    
+          // Validate form fields
+          const name = document.getElementById('name').value;
+          const email = document.getElementById('email').value;
+          const message = document.getElementById('message').value;
+    
+          if (!name || !email || !message) {
+        errorMessage.textContent = 'Please fill in all fields.';
+        form.appendChild(errorMessage);
+        return;
+      }
+    
+          // Build the mailto link with form data
+          const mailtoLink = `mailto:tari9bro@gmail.com?subject=Contact Form Submission&body=Name: ${name}%0D%0AEmail: ${email}%0D%0AMessage: ${message}`;
+    
+          // Open default email client
+          window.location.href = mailtoLink;
+        });
+      });
+    </script>
+    
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+          <div class="header__logo-img-cont">
+            <img src="./assets/png/john-doe.png" alt="bara tariq" class="header__logo-img">
+          </div>
+          <span class="header__logo-sub">Bara Tariq</span>
+        </div>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="./index.html" class="header__link"> Home </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#about" class="header__link">About </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#projects" class="header__link">
+                Projects
+              </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#contact" class="header__link"> Contact </a>
+            </li>
+          </ul>
+          <div class="header__main-ham-menu-cont">
+            <img src="./assets/svg/ham-menu.svg" alt="hamburger menu" class="header__main-ham-menu">
+            <img src="./assets/svg/ham-menu-close.svg" alt="hamburger menu close" class="header__main-ham-menu-close d-none">
+          </div>
+        </div>
+      </div>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href="./index.html"> Home </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#about"> About </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#projects"> Projects </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#contact"> Contact </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="home-hero">
+      <div class="home-hero__content">
+        <h1 class="heading-primary">Hey, My name is Bara Tariq</h1>
+        <div class="home-hero__info">
+          <p class="text-primary">Passionate about creating innovative software and captivating games, I am a dedicated multi-platform developer with a proven track record of delivering high-quality projects. My commitment to excellence, coupled with a diverse skill set, makes me an ideal candidate for any development team.</p>
+        </div>
+        <div class="home-hero__cta">
+          <a href="./#projects" class="btn btn--bg">Projects</a>
+        </div>
+      </div>
+      <div class="home-hero__socials">
+        <div class="home-hero__social">
+          <a target="_blank"  href="https://www.linkedin.com/in/tari9bro/" class="home-hero__social-icon-link">
+            <img src="./assets/png/linkedin-ico.png" alt="icon" class="home-hero__social-icon">
+          </a>
+        </div>
+        <div class="home-hero__social">
+          <a target="_blank"  href="https://github.com/tari9bro" class="home-hero__social-icon-link">
+            <img src="./assets/png/github-ico.png" alt="icon" class="home-hero__social-icon">
+          </a>
+        </div>
+        <div class="home-hero__social">
+          <a target="_blank"  href="https://wa.me/213696022095" class="home-hero__social-icon-link">
+            <img src="./assets/png/whatsapp.png" alt="icon" class="home-hero__social-icon">
+          </a>
+        </div>
+        <div class="home-hero__social">
+          <a target="_blank"  href="https://www.youtube.com/@tari9bro" class="home-hero__social-icon-link">
+            <img src="./assets/png/yt-ico.png" alt="icon" class="home-hero__social-icon">
+          </a>
+        </div>
+        <div class="home-hero__social">
+          <a target="_blank"  href="https://www.instagram.com/tari9bro/" class="home-hero__social-icon-link home-hero__social-icon-link--bd-none">
+            <img src="./assets/png/insta-ico.png" alt="icon" class="home-hero__social-icon">
+          </a>
+        </div>
+      </div>
+      <div class="home-hero__mouse-scroll-cont">
+        <div class="mouse"></div>
+      </div>
+    </section>
+    <section id="about" class="about sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-med">
+          <span class="heading-sec__main">About Me</span>
+          <span class="heading-sec__sub">I am a creative designer and developer, who aims to work with small businesses and marginalized communities to bring their passions to life. I offer both design and development services of web/Desktop applications or websites!</span>
+        </h2>
+        <div class="about__content">
+          <div class="about__content-main">
+            <h3 class="about__content-title">Get to know me!</h3>
+            <div class="about__content-details">
+              <p class="about__content-details-para">
+                Hey! It's
+                <strong>Bara Tariq</strong>
+                and I'm a <strong> Multiplatform Developer </strong> located in
+                M'Daourouch Souk Ahras Algeria. I've done
+                <strong> remote </strong>
+                projects for agencies, consulted for startups, and collaborated
+                with talented people to create
+                <strong>digital products </strong>
+                for both business and consumer use.i also worked online from 2016 till now in affiliate marketing with a lot of famous cpa networks and i have a lot of google play console accounts i publish the apps that i have created with android studio and the games that i have created with unity engine</p>
+              <p class="about__content-details-para">
+                I'm a bit of a digital product junky. Over the years, I've used
+                hundreds of web and mobile apps in different industries and
+                verticals. Feel free to
+                <strong>contact</strong> me here.
+              </p>
+            </div>
+            <a href="./index.html#about" class="btn btn--med btn--theme dynamicBgClr">Contact</a>
+          </div>
+          <div class="about__content-skills">
+            <h3 class="about__content-title">My Skills</h3>
+            <div class="skills">
+              <div class="skills__skill">HTML</div>
+              <div class="skills__skill">CSS</div>
+              <div class="skills__skill">JavaScript</div>
+              <div class="skills__skill">SASS</div>
+              <div class="skills__skill">GIT</div>
+              <div class="skills__skill">C</div>
+              <div class="skills__skill">C++</div>
+              <div class="skills__skill">C#</div>
+              <div class="skills__skill">.Net</div>
+              <div class="skills__skill">Jakarta</div>
+              <div class="skills__skill">Java se</div>
+              <div class="skills__skill">Java me</div>
+              <div class="skills__skill">Kotlin</div>
+              <div class="skills__skill">Amazon AWS</div>
+              <div class="skills__skill">Google Cloud</div>
+              <div class="skills__skill">Kotlin</div>
+              <div class="skills__skill">Kotlin</div>
+              <div class="skills__skill">Kotlin</div>
+              <div class="skills__skill">Kotlin</div>
+              <div class="skills__skill">Kotlin</div>
+              <div class="skills__skill">Kotlin</div>
+              <div class="skills__skill">Kotlin</div>
+              <div class="skills__skill">Kotlin</div>
+              <div class="skills__skill">Kotlin</div>
+              <div class="skills__skill">Kotlin</div>
+              <div class="skills__skill">Kotlin</div>
+              <div class="skills__skill">Android</div>
+              <div class="skills__skill">IOS</div>
+              <div class="skills__skill">Android Studio</div>
+              <div class="skills__skill">Unity</div>
+              <div class="skills__skill">Visual Studio</div>
+              <div class="skills__skill">Visual Studio Code</div>
+              <div class="skills__skill">Wordpress</div>
+              <div class="skills__skill">Blogger</div>
+              <div class="skills__skill">Google ADS</div>
+              <div class="skills__skill">Facebook Ads</div>
+              <div class="skills__skill">Tiktok Ads</div>
+              <div class="skills__skill">Snapshat Ads</div>
+              <div class="skills__skill">Linkedin Ads</div>
+              <div class="skills__skill">Youtube Ads</div>
+              <div class="skills__skill">SEO Marketing</div>
+              <div class="skills__skill">Content Marketing</div>
+              <div class="skills__skill">Influencer Marketing</div>
+              <div class="skills__skill">Youtube Marketing</div>
+              <div class="skills__skill">SMM Marketing</div>
+              <div class="skills__skill">Local Marketing</div>
+              <div class="skills__skill">Affiliate Marketing</div>
+              <div class="skills__skill">SEO Marketing</div>
+              <div class="skills__skill">CPA Marketing</div>
+              <div class="skills__skill">White Label Marketing</div>
+              <div class="skills__skill">Adsense</div>
+              <div class="skills__skill">Admob</div>
+              <div class="skills__skill">Applovin</div>
+              <div class="skills__skill">And More...</div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="projects sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-bg">
+          <span class="heading-sec__main">Projects</span>
+          <span class="heading-sec__sub">
+            this is some of my projects and the rest will be on my github page
+          </span>
+        </h2>
+
+        <div class="projects__content">
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img src="./assets/jpeg/ball.jpg" alt="Software Screenshot" class="projects__row-img" loading="lazy">
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Icon image
+                rolling ball ball rolling game</h3>
+
+              <p class="projects__row-content-desc">
+                Roll the ball game created by the popular Unity game engine with Unity ad codes added. The game contains 30 levels and can be increased. The game has great suspense. The idea is that you reach the finish line without falling while avoiding obstacles and collecting coins that you use to unlock other balls, 
+                such as tennis balls, soccer balls, 
+                etc. If there is no money in your account, 
+                you watch a video advertisement to get points.
+              </p>
+              <a href="https://play.google.com/store/apps/details?id=com.nezzak.mygame" class="btn btn--med btn--theme dynamicBgClr" target="_blank">Take a Look!</a>
+            <br>
+            <br>
+            <br>
+            <br>
+              <a href="https://www.sellmyapp.com/downloads/rolling-ball%e2%80%8b-3d-unity-game-source-code-with-30-levels-also-with-applovin-ads-integrated/" class="btn btn--med btn--theme dynamicBgClr" target="_blank">Buy it!</a>
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img src="./assets/jpeg/color.jpg" alt="Software Screenshot" class="projects__row-img" loading="lazy">
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Master Coloring anime book</h3>
+              <p class="projects__row-content-desc">
+                an android simple app to color anime characters it look simple but it not made easily , 
+                i used Android Studio to develope it.
+                Unleash your creativity and dive into a world of vibrant colors, 
+                captivating characters, 
+                and stunning artwork. Whether you're a devoted fan or a budding artist,
+                 this app is perfect for all ages and skill levels.
+              </p>
+              <a href="https://play.google.com/store/apps/details?id=com.nazzark.coloringb" class="btn btn--med btn--theme dynamicBgClr" target="_blank">Take a Look!</a>
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img src="./assets/jpeg/wall.jpg" alt="Software Screenshot" class="projects__row-img" loading="lazy">
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">classic cars 4k wallpapers</h3>
+              <p class="projects__row-content-desc">
+                this app is a great wallpaper app for developer who want to earn money i integrated Admob banner ,
+                 interstitial and rewarded video ad units you can click the button below to try it by yourself
+                This app is designed for tablet, smartphone, Moto X, and Android mobile phones,
+                 ensuring compatibility with a wide range of devices.
+              </p>
+              <a href="./project-3.html" class="btn btn--med btn--theme dynamicBgClr" target="_blank">Take a Look!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="contact sec-pad dynamicBg">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-med">
+          <span class="heading-sec__main heading-sec__main--lt">Contact Me</span>
+          <span class="heading-sec__sub heading-sec__sub--lt">
+            If you are interested in working with me please contact me
+          </span>
+        </h2>
+        <div class="contact__form-container">
+          <form action="#" class="contact__form">
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="name">Name</label>
+              <input required="true" placeholder="Enter Your Name" type="text" class="contact__form-input" name="name" id="name">
+            </div>
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="email">Email</label>
+              <input required="true" placeholder="Enter Your Email" type="text" class="contact__form-input" name="email" id="email">
+            </div>
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="message">Message</label>
+              <textarea required="true" cols="30" rows="10" class="contact__form-input" placeholder="Enter Your Message" name="message" id="message"></textarea>
+            </div>
+            <button type="submit" class="btn btn--theme contact__btn" >
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__upper">
+          <div class="main-footer__row main-footer__row-1">
+            <h2 class="heading heading-sm main-footer__heading-sm">
+              <span>Social</span>
+            </h2>
+            <div class="main-footer__social-cont">
+              <a target="_blank"  href="https://www.linkedin.com/in/tari9bro/">
+                <img class="main-footer__icon" src="./assets/png/linkedin-ico.png" alt="icon">
+              </a>
+              <a target="_blank"  href="https://github.com/tari9bro">
+                <img class="main-footer__icon" src="./assets/png/github-ico.png" alt="icon">
+              </a>
+              <a target="_blank"  href="https://wa.me/213696022095">
+                <img class="main-footer__icon" src="./assets/png/whatsapp.png" alt="icon">
+              </a>
+              <a target="_blank"  href="https://www.youtube.com/@tari9bro">
+                <img class="main-footer__icon" src="./assets/png/yt-ico.png" alt="icon">
+              </a>
+              <a target="_blank"  href="https://www.instagram.com/tari9bro/">
+                <img class="main-footer__icon main-footer__icon--mr-none" src="./assets/png/insta-ico.png" alt="icon">
+              </a>
+            </div>
+          </div>
+          <div class="main-footer__row main-footer__row-2">
+            <h4 class="heading heading-sm text-lt">Bara Tariq</h4>
+            <p class="main-footer__short-desc">
+              If you are interested in working with me please contact me
+            </p>
+          </div>
+        </div>
+
+        <!-- If you give me some credit or shoutout here by linking to my website, then it will be a big thing for me and will help me a lot :) -->
+        <div class="main-footer__lower">
+          © Copyright 2024.
+        </div>
+      </div>
+    </footer>
+
+    <script src="./index.js"></script>
+  
+
+<script src="moz-extension://4ff38cf8-2fc6-4339-b089-30d92c895b77/js/app.js" type="text/javascript"></script></body></html>
